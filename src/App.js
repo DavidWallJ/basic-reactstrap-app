@@ -5,37 +5,37 @@ import './App.css';
 class App extends Component {
 	render() {
 		return (
-			<nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
-				<div class="container">
-					<a class="navbar-brand" href="#">
+			<nav className="navbar navbar-expand-sm navbar-light bg-light mb-3">
+				<div className="container">
+					<a className="navbar-brand" href="#">
 						Navbar
 					</a>
 					<button
-						class="navbar-toggler"
+						className="navbar-toggler"
 						data-toggle="collapse"
 						data-target="#navbarNav"
 					>
-						<span class="navbar-toggler-icon" />
+						<span className="navbar-toggler-icon" />
 					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link" href="#">
+					<div className="collapse navbar-collapse" id="navbarNav">
+						<ul className="navbar-nav">
+							<li className="nav-item">
+								<a className="nav-link" href="#">
 									Home
 								</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">
+							<li className="nav-item">
+								<a className="nav-link" href="#">
 									About
 								</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">
+							<li className="nav-item">
+								<a className="nav-link" href="#">
 									Services
 								</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">
+							<li className="nav-item">
+								<a className="nav-link" href="#">
 									Contact
 								</a>
 							</li>

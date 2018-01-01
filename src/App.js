@@ -1,48 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import './App.css';
+
+import Navigation from './components/Nav.js';
+import Landing from './components/Landing.js';
+import ReactForm from './components/ReactForm';
 
 class App extends Component {
 	render() {
 		return (
-			<nav className="navbar navbar-expand-sm navbar-light bg-light mb-3">
-				<div className="container">
-					<a className="navbar-brand" href="#">
-						Navbar
-					</a>
-					<button
-						className="navbar-toggler"
-						data-toggle="collapse"
-						data-target="#navbarNav"
-					>
-						<span className="navbar-toggler-icon" />
-					</button>
-					<div className="collapse navbar-collapse" id="navbarNav">
-						<ul className="navbar-nav">
-							<li className="nav-item">
-								<a className="nav-link" href="#">
-									Home
-								</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="#">
-									About
-								</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="#">
-									Services
-								</a>
-							</li>
-							<li className="nav-item">
-								<a className="nav-link" href="#">
-									Contact
-								</a>
-							</li>
-						</ul>
+			<div className="App">
+				<BrowserRouter>
+					<div>
+						<Route path="/" component={Navigation} />
+						<Switch>
+							<Route exact path="/" component={Landing} />
+							<Route path="/reactform" component={ReactForm} />
+						</Switch>
 					</div>
-				</div>
-			</nav>
+				</BrowserRouter>
+			</div>
 		);
 	}
 }
